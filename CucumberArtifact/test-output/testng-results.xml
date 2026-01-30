@@ -2,24 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-29T10:25:55 UTC" name="Default suite" finished-at="2026-01-29T10:25:58 UTC" duration-ms="2646">
+  <suite started-at="2026-01-30T05:10:09 UTC" name="Default suite" finished-at="2026-01-30T05:10:16 UTC" duration-ms="7061">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinition.TestRunner@293a5bf6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-01-29T10:25:55 UTC" name="Default test" finished-at="2026-01-29T10:25:58 UTC" duration-ms="2646">
-      <class name="extentReport.ExtentReportex">
-        <test-method is-config="true" signature="starttest()[pri:0, instance:extentReport.ExtentReportex@59309333]" started-at="2026-01-29T10:25:55 UTC" name="starttest" finished-at="2026-01-29T10:25:55 UTC" duration-ms="86" status="PASS">
+    <test started-at="2026-01-30T05:10:09 UTC" name="Default test" finished-at="2026-01-30T05:10:16 UTC" duration-ms="7061">
+      <class name="stepDefinition.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepDefinition.TestRunner@293a5bf6]" started-at="2026-01-30T05:10:09 UTC" name="setUpClass" finished-at="2026-01-30T05:10:09 UTC" duration-ms="400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@34208baa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- starttest -->
-        <test-method signature="extenttest()[pri:0, instance:extentReport.ExtentReportex@59309333]" started-at="2026-01-29T10:25:55 UTC" name="extenttest" finished-at="2026-01-29T10:25:58 UTC" duration-ms="2328" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinition.TestRunner@293a5bf6]" started-at="2026-01-30T05:10:09 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-30T05:10:16 UTC" duration-ms="6598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating Search is workinn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Searching On Browser"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extenttest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:extentReport.ExtentReportex@59309333]" started-at="2026-01-29T10:25:58 UTC" name="teardown" finished-at="2026-01-29T10:25:58 UTC" duration-ms="208" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepDefinition.TestRunner@293a5bf6]" started-at="2026-01-30T05:10:16 UTC" name="tearDownClass" finished-at="2026-01-30T05:10:16 UTC" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- extentReport.ExtentReportex -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepDefinition.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
