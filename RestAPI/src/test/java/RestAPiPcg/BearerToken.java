@@ -13,9 +13,7 @@ public class BearerToken {
 	public void two() {
 
 		RestAssured.baseURI = "https://api.github.com";
-
 		RestAssured.basePath="/users/tanmay4510/repos";
-
 		RequestSpecification requestspec = RestAssured.given();
 
 		requestspec.header("Authorization", "Bearer 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");
@@ -27,7 +25,7 @@ public class BearerToken {
 
 		System.out.println(reposname);
 
-		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.statusCode(),200);
 		
 	}
 	
