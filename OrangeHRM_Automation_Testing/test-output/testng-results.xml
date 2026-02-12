@@ -2,26 +2,30 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-11T10:07:54 UTC" name="Default suite" finished-at="2026-02-11T10:09:11 UTC" duration-ms="77166">
+  <suite started-at="2026-02-12T10:23:56 UTC" name="Default suite" finished-at="2026-02-12T10:25:08 UTC" duration-ms="71770">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@293a5bf6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@57db2b13]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-11T10:07:54 UTC" name="Default test" finished-at="2026-02-11T10:09:11 UTC" duration-ms="77166">
+    <test started-at="2026-02-12T10:23:56 UTC" name="Default test" finished-at="2026-02-12T10:25:08 UTC" duration-ms="71770">
       <class name="testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@293a5bf6]" started-at="2026-02-11T10:07:54 UTC" name="setUpClass" finished-at="2026-02-11T10:07:54 UTC" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@57db2b13]" started-at="2026-02-12T10:23:56 UTC" name="setUpClass" finished-at="2026-02-12T10:23:56 UTC" duration-ms="371" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@484149eb]]>
+                <![CDATA[org.testng.TestRunner@372954e1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@293a5bf6]" started-at="2026-02-11T10:07:54 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-11T10:09:11 UTC" duration-ms="76713" status="FAIL">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:testRunner.TestRunner@57db2b13]" started-at="2026-02-12T10:23:56 UTC" name="setupReport" finished-at="2026-02-12T10:23:56 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@57db2b13]" started-at="2026-02-12T10:23:56 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T10:25:07 UTC" duration-ms="71126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -41,10 +45,10 @@
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1019-aws', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ac7560f55c2d4677f19cd2e4c32c6c0, clickElement {id=f.3EE750DEB7678B31C4D7A935973DFFE3.d.687DC9FF9855E4F2A2ED8B970F22624D.e.125}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42707/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (2ac7560f55c2d4677f19cd2e4c32c6c0)] -> xpath: //button[@type='submit']]
-Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0]]>
+Command: [56a4c09cb5fec68460d42d983a4fc70d, clickElement {id=f.0B437A951AFDE46B6989B83DE1856FDC.d.650EAC6E78C98CDF86540ECA9680C7CA.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38269/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (56a4c09cb5fec68460d42d983a4fc70d)] -> xpath: //button[@type='submit']]
+Session ID: 56a4c09cb5fec68460d42d983a4fc70d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (1241, 499). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
@@ -52,10 +56,10 @@ Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0]]>
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1019-aws', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ac7560f55c2d4677f19cd2e4c32c6c0, clickElement {id=f.3EE750DEB7678B31C4D7A935973DFFE3.d.687DC9FF9855E4F2A2ED8B970F22624D.e.125}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42707/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (2ac7560f55c2d4677f19cd2e4c32c6c0)] -> xpath: //button[@type='submit']]
-Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0
+Command: [56a4c09cb5fec68460d42d983a4fc70d, clickElement {id=f.0B437A951AFDE46B6989B83DE1856FDC.d.650EAC6E78C98CDF86540ECA9680C7CA.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38269/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (56a4c09cb5fec68460d42d983a4fc70d)] -> xpath: //button[@type='submit']]
+Session ID: 56a4c09cb5fec68460d42d983a4fc70d
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -68,16 +72,20 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at pages.PIMPage.addEmployee(PIMPage.java:31)
-at stepDefinition.PIMSteps.user_adds_employee(PIMSteps.java:14)
-at ✽.user adds a new employee in PIM module(file:///home/labuser/eclipse-workspace/OrangeHRM_Automation_Testing/src/test/resources/feature/completeflow.feature:9)
+at pages.PIMPage.addEmployee(PIMPage.java:45)
+at stepDefinition.PIMSteps.user_adds_employee(PIMSteps.java:19)
+at ✽.user adds a new employee in PIM module(file:///home/labuser/git/Automation-Testing2/OrangeHRM_Automation_Testing/src/test/resources/feature/completeflow.feature:9)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@293a5bf6]" started-at="2026-02-11T10:09:11 UTC" name="tearDownClass" finished-at="2026-02-11T10:09:11 UTC" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:testRunner.TestRunner@57db2b13]" started-at="2026-02-12T10:25:07 UTC" name="tearDownReport" finished-at="2026-02-12T10:25:08 UTC" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@57db2b13]" started-at="2026-02-12T10:25:08 UTC" name="tearDownClass" finished-at="2026-02-12T10:25:08 UTC" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

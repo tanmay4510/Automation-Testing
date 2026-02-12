@@ -2,11 +2,18 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utils.ScreenshotUtil;
+
+import java.time.Duration;
 
 public class AdminPage {
 
     WebDriver driver;
-    
+    WebDriverWait wait;
+
     By userRoleDropdown = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div/div[1]");
     By statusDropdown = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div/div[1]");
 
@@ -14,7 +21,6 @@ public class AdminPage {
     By essOption = By.xpath("//span[text()='ESS']");
     By enabledOption = By.xpath("//span[text()='Enabled']");
     By disabledOption = By.xpath("//span[text()='Disabled']");
-
 
     By adminMenu = By.xpath("//span[text()='Admin']");
     By addBtn = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button");
@@ -27,46 +33,55 @@ public class AdminPage {
 
     public AdminPage(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
+
     public void selectUserRole(String role) {
-        driver.findElement(userRoleDropdown).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(userRoleDropdown)).click();
 
         if (role.equalsIgnoreCase("Admin")) {
-            driver.findElement(adminOption).click();
+            wait.until(ExpectedConditions.elementToBeClickable(adminOption)).click();
         } else if (role.equalsIgnoreCase("ESS")) {
-            driver.findElement(essOption).click();
+            wait.until(ExpectedConditions.elementToBeClickable(essOption)).click();
         }
     }
+
     public void selectStatus(String status) {
-        driver.findElement(statusDropdown).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(statusDropdown)).click();
 
         if (status.equalsIgnoreCase("Enabled")) {
-            driver.findElement(enabledOption).click();
+            wait.until(ExpectedConditions.elementToBeClickable(enabledOption)).click();
         } else if (status.equalsIgnoreCase("Disabled")) {
-            driver.findElement(disabledOption).click();
+            wait.until(ExpectedConditions.elementToBeClickable(disabledOption)).click();
         }
     }
 
+    public void addUser() {
 
-    public void addUser() throws InterruptedException {
+        wait.until(ExpectedConditions.elementToBeClickable(adminMenu)).click();
 
-        driver.findElement(adminMenu).click();
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(addBtn)).click();
 
-        driver.findElement(addBtn).click();
-        Thread.sleep(2000);
-        
         selectUserRole("ESS");
 
-        driver.findElement(employeeName).sendKeys("Ranga Akunuri");
-        Thread.sleep(2000);
-        
+        wait.until(ExpectedConditions.visibilityOfElementLocated(employeeName))
+                .sendKeys("Ranga Akunuri");
+
         selectStatus("Enabled");
 
-        driver.findElement(usernameField).sendKeys("TanmayUser99");
-        driver.findElement(passwordField).sendKeys("Admin@1234");
-        driver.findElement(confirmPassword).sendKeys("Admin@1234");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField))
+                .sendKeys("MilligilliUser99");
 
-        driver.findElement(saveBtn).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField))
+                .sendKeys("Admin@1234");
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(confirmPassword))
+                .sendKeys("Admin@1234");
+        ScreenshotUtil.capture(driver, "UserAdded");
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(saveBtn)).click();
     }
 }

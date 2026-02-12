@@ -136,10 +136,10 @@
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-1019-aws&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ac7560f55c2d4677f19cd2e4c32c6c0, clickElement {id=f.3EE750DEB7678B31C4D7A935973DFFE3.d.687DC9FF9855E4F2A2ED8B970F22624D.e.125}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42707/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (2ac7560f55c2d4677f19cd2e4c32c6c0)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0
+Command: [56a4c09cb5fec68460d42d983a4fc70d, clickElement {id=f.0B437A951AFDE46B6989B83DE1856FDC.d.650EAC6E78C98CDF86540ECA9680C7CA.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.127, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38269/devtoo..., se:cdpVersion: 139.0.7258.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (56a4c09cb5fec68460d42d983a4fc70d)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: 56a4c09cb5fec68460d42d983a4fc70d
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -152,9 +152,9 @@ Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.PIMPage.addEmployee(PIMPage.java:31)
-	at stepDefinition.PIMSteps.user_adds_employee(PIMSteps.java:14)
-	at ✽.user adds a new employee in PIM module(file:///home/labuser/eclipse-workspace/OrangeHRM_Automation_Testing/src/test/resources/feature/completeflow.feature:9)
+	at pages.PIMPage.addEmployee(PIMPage.java:45)
+	at stepDefinition.PIMSteps.user_adds_employee(PIMSteps.java:19)
+	at ✽.user adds a new employee in PIM module(file:///home/labuser/git/Automation-Testing2/OrangeHRM_Automation_Testing/src/test/resources/feature/completeflow.feature:9)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -166,7 +166,7 @@ Session ID: 2ac7560f55c2d4677f19cd2e4c32c6c0
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-277780999/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-398349741/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -227,7 +227,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.TestRunner')
-data.setCell(0, 3, 76713);
+data.setCell(0, 3, 71126);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -260,18 +260,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@484149eb)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@372954e1)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">372 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Login, Add Employee, and Add User", "Complete End-to-End Flow in OrangeHRM")</span>
-                <span class="method-start">389 ms</span>
+                <span class="method-start">379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">71509 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">77105 ms</span>
+                <span class="method-start">71712 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

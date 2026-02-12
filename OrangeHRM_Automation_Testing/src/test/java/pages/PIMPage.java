@@ -2,10 +2,17 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utils.ScreenshotUtil;
+
+import java.time.Duration;
 
 public class PIMPage {
 
     WebDriver driver;
+    WebDriverWait wait;
 
     By pimMenu = By.xpath("//span[text()='PIM']");
     By addEmployeeBtn = By.xpath("//a[text()='Add Employee']");
@@ -15,20 +22,26 @@ public class PIMPage {
 
     public PIMPage(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    public void addEmployee() throws InterruptedException {
+    public void addEmployee() {
 
-        driver.findElement(pimMenu).click();
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(pimMenu))
+                .click();
 
-        driver.findElement(addEmployeeBtn).click();
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(addEmployeeBtn))
+                .click();
 
-        driver.findElement(firstName).sendKeys("Tanmay");
-        driver.findElement(lastName).sendKeys("Raj");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(firstName))
+                .sendKeys("Milligilli");
 
-        driver.findElement(saveBtn).click();
-        driver.findElement(saveBtn).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(lastName))
+                .sendKeys("Chilligilli");
+        ScreenshotUtil.capture(driver, "EmployeeAdded");
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(saveBtn))
+                .click();
     }
 }
